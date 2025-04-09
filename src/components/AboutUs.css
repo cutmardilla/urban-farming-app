@@ -1,0 +1,114 @@
+/* Global Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #d4f8c6, #76c893);
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.about-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 50px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2d6a4f;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #52796f;
+}
+
+/* About Content */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-image {
+  width: 50%;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+}
+
+.about-text {
+  width: 50%;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #40916c;
+}
+
+/* Founder Section */
+.founder-section {
+  margin-top: 50px;
+}
+
+.founder-card {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 250px;
+  margin: auto;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.founder-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+  margin-top: 50px;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #52b788;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-btn:hover {
+  background: #40916c;
+  transform: scale(1.1);
+}

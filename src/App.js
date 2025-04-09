@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Dashboard from "./components/Dashboard";
+import Plants from "./components/Plants";
+import PanduanUrbanFarming from "./components/PanduanUrbanFarming";
+import JadwalPerawatan from "./components/JadwalPerawatan"; // Pastikan sudah dibuat
+import AboutUs from "./components/AboutUs";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/plants" element={<Plants />} />
+        <Route path="/panduan" element={<PanduanUrbanFarming />} />
+        <Route path="/jadwal" element={<JadwalPerawatan />} /> {/* Tambahkan ini */}
+        <Route path="/about" element={<AboutUs />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
